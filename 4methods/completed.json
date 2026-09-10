@@ -1,0 +1,41 @@
+{
+  "architectures": [
+    "mlp",
+    "numerical_feature_transformer"
+  ],
+  "base_methods": [
+    "rollback_repair",
+    "ssd_canonical",
+    "dc_ssd_no_contrast",
+    "dc_ssd_no_class_balance",
+    "dc_ssd",
+    "scrub_r"
+  ],
+  "completed_utc": "2026-09-10T08:16:42.072649+00:00",
+  "deletion_scenarios": 24,
+  "forgotten_domains": [
+    "NF-UNSW-NB15",
+    "NF-ToN-IoT",
+    "NF-BoT-IoT",
+    "NF-CSE-CIC-IDS2018"
+  ],
+  "method_scenarios": 264,
+  "methods": [
+    "rollback_repair",
+    "ssd_canonical",
+    "ssd_canonical@alpha=1",
+    "ssd_canonical@alpha=2",
+    "ssd_canonical@alpha=3",
+    "ssd_canonical@alpha=5",
+    "dc_ssd_no_contrast",
+    "dc_ssd_no_class_balance",
+    "dc_ssd",
+    "scrub_r",
+    "scrub_r@lr=0.001"
+  ],
+  "seeds": [
+    42,
+    1337,
+    2026
+  ]
+}

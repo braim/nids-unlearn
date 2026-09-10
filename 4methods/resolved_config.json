@@ -1,0 +1,213 @@
+{
+  "attack": {
+    "bootstrap_repetitions": 1000,
+    "confidence_level": 0.95,
+    "fixed_fpr": 0.01,
+    "max_samples_per_class": 10000
+  },
+  "data": {
+    "allow_kaggle_download": true,
+    "common_features": [
+      "PROTOCOL",
+      "L7_PROTO",
+      "IN_BYTES",
+      "OUT_BYTES",
+      "IN_PKTS",
+      "OUT_PKTS",
+      "FLOW_DURATION",
+      "TCP_FLAGS",
+      "CLIENT_TCP_FLAGS",
+      "SERVER_TCP_FLAGS",
+      "DURATION_IN",
+      "DURATION_OUT",
+      "MIN_TTL",
+      "MAX_TTL",
+      "LONGEST_FLOW_PKT",
+      "SHORTEST_FLOW_PKT",
+      "MIN_IP_PKT_LEN",
+      "MAX_IP_PKT_LEN",
+      "SRC_TO_DST_SECOND_BYTES",
+      "DST_TO_SRC_SECOND_BYTES",
+      "RETRANSMITTED_IN_BYTES",
+      "RETRANSMITTED_IN_PKTS",
+      "RETRANSMITTED_OUT_BYTES",
+      "RETRANSMITTED_OUT_PKTS",
+      "SRC_TO_DST_AVG_THROUGHPUT",
+      "DST_TO_SRC_AVG_THROUGHPUT",
+      "NUM_PKTS_UP_TO_128_BYTES",
+      "NUM_PKTS_128_TO_256_BYTES",
+      "NUM_PKTS_256_TO_512_BYTES",
+      "NUM_PKTS_512_TO_1024_BYTES",
+      "NUM_PKTS_1024_TO_1514_BYTES",
+      "TCP_WIN_MAX_IN",
+      "TCP_WIN_MAX_OUT",
+      "ICMP_TYPE",
+      "ICMP_IPV4_TYPE",
+      "DNS_QUERY_TYPE",
+      "DNS_TTL_ANSWER",
+      "FTP_COMMAND_RET_CODE",
+      "SRC_TO_DST_IAT_MIN",
+      "SRC_TO_DST_IAT_MAX",
+      "SRC_TO_DST_IAT_AVG",
+      "SRC_TO_DST_IAT_STDDEV",
+      "DST_TO_SRC_IAT_MIN",
+      "DST_TO_SRC_IAT_MAX",
+      "DST_TO_SRC_IAT_AVG",
+      "DST_TO_SRC_IAT_STDDEV",
+      "BYTES_PER_PKT"
+    ],
+    "csv_chunk_rows": 100000,
+    "datasets": [
+      {
+        "allow_multiple_files": false,
+        "encoding": "utf-8",
+        "file_pattern": "**/*UNSW*N*15*v3*",
+        "kaggle_slug": "seyhed/nf-unsw-nb15-v3",
+        "label_column": null,
+        "name": "NF-UNSW-NB15",
+        "path": "/content/datasets",
+        "sample_rows": null
+      },
+      {
+        "allow_multiple_files": false,
+        "encoding": "utf-8",
+        "file_pattern": "**/*ToN*IoT*v3*",
+        "kaggle_slug": "seyhed/nf-ton-iot-v3",
+        "label_column": null,
+        "name": "NF-ToN-IoT",
+        "path": "/content/datasets",
+        "sample_rows": null
+      },
+      {
+        "allow_multiple_files": false,
+        "encoding": "utf-8",
+        "file_pattern": "**/*BoT*IoT*v3*",
+        "kaggle_slug": "seyhed/nf-bot-iot-v3",
+        "label_column": null,
+        "name": "NF-BoT-IoT",
+        "path": "/content/datasets",
+        "sample_rows": null
+      },
+      {
+        "allow_multiple_files": false,
+        "encoding": "utf-8",
+        "file_pattern": "**/*CIC*IDS2018*v3*",
+        "kaggle_slug": "seyhed/nf-cicids2018-v3",
+        "label_column": null,
+        "name": "NF-CSE-CIC-IDS2018",
+        "path": "/content/datasets",
+        "sample_rows": null
+      }
+    ],
+    "drop_exact_duplicates": true,
+    "drop_feature_duplicates": true,
+    "group_columns": [
+      "IPV4_SRC_ADDR",
+      "IPV4_DST_ADDR",
+      "PROTOCOL"
+    ],
+    "hash_source_files": true,
+    "sample_rows_per_dataset": 250000,
+    "scaler": "fixed_log",
+    "scaler_fit_rows": null,
+    "seed": 42,
+    "split_rate_warning_threshold": 0.1,
+    "split_strategy": "group_stratified",
+    "strict_protocol": true,
+    "test_fraction": 0.15,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15
+  },
+  "models": {
+    "architectures": [
+      "mlp",
+      "numerical_feature_transformer"
+    ],
+    "dropout": 0.1,
+    "latent_dim": 32,
+    "mlp_hidden_dims": [
+      128,
+      64
+    ],
+    "nft_d_token": 16,
+    "nft_ffn_factor": 4,
+    "nft_heads": 4,
+    "nft_layers": 2
+  },
+  "runtime": {
+    "deterministic": true,
+    "device": "auto",
+    "num_workers": 0,
+    "output_dir": "/content/artifacts/netflow_unlearning",
+    "save_predictions": false
+  },
+  "training": {
+    "batch_size": 256,
+    "checkpoint_selection": "final",
+    "domain_sampling": "proportional",
+    "epochs": 20,
+    "fixed_class_weights": [
+      1.0,
+      1.0
+    ],
+    "gradient_clip_norm": 5.0,
+    "learning_rate": 0.01,
+    "min_delta": 0.0001,
+    "optimizer": "sgd",
+    "patience": 5,
+    "seeds": [
+      42,
+      1337,
+      2026
+    ],
+    "sgd_momentum": 0.0,
+    "strict_unlearning_protocol": true,
+    "weight_decay": 0.0
+  },
+  "unlearning": {
+    "dc_ssd_alpha": 2.0,
+    "dc_ssd_lambda": 1.0,
+    "dc_ssd_reference": "mean",
+    "fisher_batch_size": 64,
+    "fisher_epsilon": 1e-12,
+    "methods": [
+      "rollback_repair",
+      "ssd_canonical",
+      "dc_ssd_no_contrast",
+      "dc_ssd_no_class_balance",
+      "dc_ssd",
+      "scrub_r"
+    ],
+    "repair_epochs": 2,
+    "repair_fraction": 0.25,
+    "repair_learning_rate": 0.002,
+    "rollback_scale": 1.0,
+    "scrub_alpha": 0.001,
+    "scrub_forget_batch_size": 32,
+    "scrub_gamma": 0.99,
+    "scrub_learning_rate": 0.0005,
+    "scrub_learning_rate_sweep": [
+      0.0005,
+      0.001
+    ],
+    "scrub_lr_decay_factor": 0.1,
+    "scrub_lr_milestones": [
+      2
+    ],
+    "scrub_max_steps": 2,
+    "scrub_momentum": 0.9,
+    "scrub_optimizer": "sgd",
+    "scrub_retain_batch_size": 128,
+    "scrub_steps": 3,
+    "scrub_temperature": 4.0,
+    "scrub_weight_decay": 0.0005,
+    "ssd_alpha": 10.0,
+    "ssd_alpha_sweep": [
+      1.0,
+      2.0,
+      3.0,
+      5.0
+    ],
+    "ssd_lambda": 1.0
+  }
+}
