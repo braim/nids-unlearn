@@ -1,0 +1,182 @@
+[
+  {
+    "alpha": 10.0,
+    "batch_normalized_ratio_upper_bound": 3.5252324037184595,
+    "forget_fisher_batches": 1506,
+    "forgotten_domain": "NF-UNSW-NB15",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical",
+    "structural_noop": true
+  },
+  {
+    "alpha": 10.0,
+    "batch_normalized_ratio_upper_bound": 9.21701388888889,
+    "forget_fisher_batches": 576,
+    "forgotten_domain": "NF-ToN-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical",
+    "structural_noop": true
+  },
+  {
+    "alpha": 10.0,
+    "batch_normalized_ratio_upper_bound": 3.3901660280970627,
+    "forget_fisher_batches": 1566,
+    "forgotten_domain": "NF-BoT-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical",
+    "structural_noop": true
+  },
+  {
+    "alpha": 10.0,
+    "batch_normalized_ratio_upper_bound": 3.19626730885009,
+    "forget_fisher_batches": 1661,
+    "forgotten_domain": "NF-CSE-CIC-IDS2018",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical",
+    "structural_noop": true
+  },
+  {
+    "alpha": 1.0,
+    "batch_normalized_ratio_upper_bound": 3.5252324037184595,
+    "forget_fisher_batches": 1506,
+    "forgotten_domain": "NF-UNSW-NB15",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=1",
+    "structural_noop": false
+  },
+  {
+    "alpha": 1.0,
+    "batch_normalized_ratio_upper_bound": 9.21701388888889,
+    "forget_fisher_batches": 576,
+    "forgotten_domain": "NF-ToN-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=1",
+    "structural_noop": false
+  },
+  {
+    "alpha": 1.0,
+    "batch_normalized_ratio_upper_bound": 3.3901660280970627,
+    "forget_fisher_batches": 1566,
+    "forgotten_domain": "NF-BoT-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=1",
+    "structural_noop": false
+  },
+  {
+    "alpha": 1.0,
+    "batch_normalized_ratio_upper_bound": 3.19626730885009,
+    "forget_fisher_batches": 1661,
+    "forgotten_domain": "NF-CSE-CIC-IDS2018",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=1",
+    "structural_noop": false
+  },
+  {
+    "alpha": 2.0,
+    "batch_normalized_ratio_upper_bound": 3.5252324037184595,
+    "forget_fisher_batches": 1506,
+    "forgotten_domain": "NF-UNSW-NB15",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=2",
+    "structural_noop": false
+  },
+  {
+    "alpha": 2.0,
+    "batch_normalized_ratio_upper_bound": 9.21701388888889,
+    "forget_fisher_batches": 576,
+    "forgotten_domain": "NF-ToN-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=2",
+    "structural_noop": false
+  },
+  {
+    "alpha": 2.0,
+    "batch_normalized_ratio_upper_bound": 3.3901660280970627,
+    "forget_fisher_batches": 1566,
+    "forgotten_domain": "NF-BoT-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=2",
+    "structural_noop": false
+  },
+  {
+    "alpha": 2.0,
+    "batch_normalized_ratio_upper_bound": 3.19626730885009,
+    "forget_fisher_batches": 1661,
+    "forgotten_domain": "NF-CSE-CIC-IDS2018",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=2",
+    "structural_noop": false
+  },
+  {
+    "alpha": 3.0,
+    "batch_normalized_ratio_upper_bound": 3.5252324037184595,
+    "forget_fisher_batches": 1506,
+    "forgotten_domain": "NF-UNSW-NB15",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=3",
+    "structural_noop": false
+  },
+  {
+    "alpha": 3.0,
+    "batch_normalized_ratio_upper_bound": 9.21701388888889,
+    "forget_fisher_batches": 576,
+    "forgotten_domain": "NF-ToN-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=3",
+    "structural_noop": false
+  },
+  {
+    "alpha": 3.0,
+    "batch_normalized_ratio_upper_bound": 3.3901660280970627,
+    "forget_fisher_batches": 1566,
+    "forgotten_domain": "NF-BoT-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=3",
+    "structural_noop": false
+  },
+  {
+    "alpha": 3.0,
+    "batch_normalized_ratio_upper_bound": 3.19626730885009,
+    "forget_fisher_batches": 1661,
+    "forgotten_domain": "NF-CSE-CIC-IDS2018",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=3",
+    "structural_noop": false
+  },
+  {
+    "alpha": 5.0,
+    "batch_normalized_ratio_upper_bound": 3.5252324037184595,
+    "forget_fisher_batches": 1506,
+    "forgotten_domain": "NF-UNSW-NB15",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=5",
+    "structural_noop": true
+  },
+  {
+    "alpha": 5.0,
+    "batch_normalized_ratio_upper_bound": 9.21701388888889,
+    "forget_fisher_batches": 576,
+    "forgotten_domain": "NF-ToN-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=5",
+    "structural_noop": false
+  },
+  {
+    "alpha": 5.0,
+    "batch_normalized_ratio_upper_bound": 3.3901660280970627,
+    "forget_fisher_batches": 1566,
+    "forgotten_domain": "NF-BoT-IoT",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=5",
+    "structural_noop": true
+  },
+  {
+    "alpha": 5.0,
+    "batch_normalized_ratio_upper_bound": 3.19626730885009,
+    "forget_fisher_batches": 1661,
+    "forgotten_domain": "NF-CSE-CIC-IDS2018",
+    "full_fisher_batches": 5309,
+    "method": "ssd_canonical@alpha=5",
+    "structural_noop": true
+  }
+]
