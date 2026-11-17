@@ -1,0 +1,165 @@
+{
+  "mlp/dc_ssd": {
+    "agreement": 0.5361,
+    "forgotten_f1_gap": 0.5076,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1316,
+    "retained_f1": 0.6485,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 3114.89
+  },
+  "mlp/dc_ssd_no_class_balance": {
+    "agreement": 0.3492,
+    "forgotten_f1_gap": 0.6796,
+    "identity_frac": 0.0,
+    "mia_gap": 0.2171,
+    "retained_f1": 0.6603,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 3495.36
+  },
+  "mlp/dc_ssd_no_contrast": {
+    "agreement": 0.5062,
+    "forgotten_f1_gap": 0.5635,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1564,
+    "retained_f1": 0.712,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 3039.34
+  },
+  "mlp/rollback_repair": {
+    "agreement": 0.7561,
+    "forgotten_f1_gap": 0.0522,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1168,
+    "retained_f1": 0.2988,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 40.03
+  },
+  "mlp/scrub_r": {
+    "agreement": 0.7262,
+    "forgotten_f1_gap": 0.0893,
+    "identity_frac": 0.0,
+    "mia_gap": 0.0508,
+    "retained_f1": 0.7512,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 1.35
+  },
+  "mlp/scrub_r@lr=0.0001": {
+    "agreement": 0.7758,
+    "forgotten_f1_gap": 0.1176,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1118,
+    "retained_f1": 0.8276,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 1.34
+  },
+  "mlp/scrub_r@lr=0.001": {
+    "agreement": 0.6497,
+    "forgotten_f1_gap": 0.2169,
+    "identity_frac": 0.0,
+    "mia_gap": 0.0662,
+    "retained_f1": 0.7736,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 1.34
+  },
+  "mlp/ssd_canonical": {
+    "agreement": 0.3638,
+    "forgotten_f1_gap": 0.7063,
+    "identity_frac": 1.0,
+    "mia_gap": 0.2623,
+    "retained_f1": 0.8166,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 34.42
+  },
+  "mlp/ssd_canonical@alpha=1": {
+    "agreement": 0.4376,
+    "forgotten_f1_gap": 0.5912,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1786,
+    "retained_f1": 0.6886,
+    "retrained_retained_f1": 0.8275,
+    "speedup": 33.76
+  },
+  "numerical_feature_transformer/dc_ssd": {
+    "agreement": 0.4338,
+    "forgotten_f1_gap": 0.6144,
+    "identity_frac": 0.0,
+    "mia_gap": 0.2158,
+    "retained_f1": 0.6301,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 3274.87
+  },
+  "numerical_feature_transformer/dc_ssd_no_class_balance": {
+    "agreement": 0.4526,
+    "forgotten_f1_gap": 0.6183,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1404,
+    "retained_f1": 0.6848,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 3699.71
+  },
+  "numerical_feature_transformer/dc_ssd_no_contrast": {
+    "agreement": 0.5369,
+    "forgotten_f1_gap": 0.5243,
+    "identity_frac": 0.0,
+    "mia_gap": 0.166,
+    "retained_f1": 0.6544,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 3275.79
+  },
+  "numerical_feature_transformer/rollback_repair": {
+    "agreement": 0.4994,
+    "forgotten_f1_gap": 0.2698,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1584,
+    "retained_f1": 0.3138,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 40.03
+  },
+  "numerical_feature_transformer/scrub_r": {
+    "agreement": 0.6251,
+    "forgotten_f1_gap": 0.1713,
+    "identity_frac": 0.0,
+    "mia_gap": 0.0866,
+    "retained_f1": 0.8554,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 1.44
+  },
+  "numerical_feature_transformer/scrub_r@lr=0.0001": {
+    "agreement": 0.6222,
+    "forgotten_f1_gap": 0.1504,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1256,
+    "retained_f1": 0.8603,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 1.43
+  },
+  "numerical_feature_transformer/scrub_r@lr=0.001": {
+    "agreement": 0.6341,
+    "forgotten_f1_gap": 0.2274,
+    "identity_frac": 0.0,
+    "mia_gap": 0.0794,
+    "retained_f1": 0.89,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 1.43
+  },
+  "numerical_feature_transformer/ssd_canonical": {
+    "agreement": 0.4635,
+    "forgotten_f1_gap": 0.6196,
+    "identity_frac": 1.0,
+    "mia_gap": 0.2086,
+    "retained_f1": 0.8888,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 23.44
+  },
+  "numerical_feature_transformer/ssd_canonical@alpha=1": {
+    "agreement": 0.3437,
+    "forgotten_f1_gap": 0.6283,
+    "identity_frac": 0.0,
+    "mia_gap": 0.1145,
+    "retained_f1": 0.6248,
+    "retrained_retained_f1": 0.8874,
+    "speedup": 23.22
+  },
+  "retrain_seconds_mean": 118.9
+}

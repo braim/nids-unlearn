@@ -1,0 +1,14 @@
+\begin{tabular}{lccc}
+\toprule
+Model & MIA AUC & Advantage & TPR@1\%FPR \\
+\midrule
+Original & 0.718 {\scriptsize$\pm$0.063} & 0.402 {\scriptsize$\pm$0.112} & 0.201 {\scriptsize$\pm$0.123} \\
+Retrained (gold) & 0.497 {\scriptsize$\pm$0.049} & 0.149 {\scriptsize$\pm$0.071} & 0.012 {\scriptsize$\pm$0.004} \\
+SCRUB-R & 0.516 {\scriptsize$\pm$0.060} & 0.148 {\scriptsize$\pm$0.082} & 0.054 {\scriptsize$\pm$0.059} \\
+SSD & 0.718 {\scriptsize$\pm$0.063} & 0.402 {\scriptsize$\pm$0.112} & 0.201 {\scriptsize$\pm$0.123} \\
+DC-SSD & 0.503 {\scriptsize$\pm$0.078} & 0.164 {\scriptsize$\pm$0.086} & 0.071 {\scriptsize$\pm$0.071} \\
+DC-SSD w/o contrast & 0.562 {\scriptsize$\pm$0.069} & 0.229 {\scriptsize$\pm$0.091} & 0.073 {\scriptsize$\pm$0.070} \\
+DC-SSD w/o class bal. & 0.586 {\scriptsize$\pm$0.089} & 0.266 {\scriptsize$\pm$0.123} & 0.177 {\scriptsize$\pm$0.120} \\
+Rollback+Repair & 0.477 {\scriptsize$\pm$0.075} & 0.167 {\scriptsize$\pm$0.086} & 0.014 {\scriptsize$\pm$0.007} \\
+\bottomrule
+\end{tabular}

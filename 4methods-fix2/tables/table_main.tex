@@ -1,0 +1,19 @@
+\begin{tabular}{llccccc}
+\toprule
+Arch. & Method & Retained macro-F1 $\uparrow$ & Forgotten F1 gap $\downarrow$ &
+MIA AUC gap $\downarrow$ & Agreement $\uparrow$ & Speed-up \\
+\midrule
+MLP & SCRUB-R & 0.751 {\scriptsize$\pm$0.070} & 0.089 {\scriptsize$\pm$0.057} & 0.051 {\scriptsize$\pm$0.033} & 0.726 {\scriptsize$\pm$0.138} & 1.3$\times$ \\
+MLP & SSD & 0.817 {\scriptsize$\pm$0.040} & 0.706 {\scriptsize$\pm$0.177} & 0.262 {\scriptsize$\pm$0.102} & 0.364 {\scriptsize$\pm$0.145} & 34$\times$ \\
+MLP & DC-SSD & 0.649 {\scriptsize$\pm$0.134} & 0.508 {\scriptsize$\pm$0.237} & 0.132 {\scriptsize$\pm$0.080} & 0.536 {\scriptsize$\pm$0.185} & 3115$\times$ \\
+MLP & DC-SSD w/o~contrast & 0.712 {\scriptsize$\pm$0.088} & 0.563 {\scriptsize$\pm$0.215} & 0.156 {\scriptsize$\pm$0.101} & 0.506 {\scriptsize$\pm$0.151} & 3039$\times$ \\
+MLP & DC-SSD w/o~class bal. & 0.660 {\scriptsize$\pm$0.175} & 0.680 {\scriptsize$\pm$0.209} & 0.217 {\scriptsize$\pm$0.106} & 0.349 {\scriptsize$\pm$0.177} & 3495$\times$ \\
+MLP & Rollback+Repair & 0.299 {\scriptsize$\pm$0.210} & 0.052 {\scriptsize$\pm$0.030} & 0.117 {\scriptsize$\pm$0.069} & 0.756 {\scriptsize$\pm$0.139} & 40$\times$ \\
+NFT & SCRUB-R & 0.855 {\scriptsize$\pm$0.096} & 0.171 {\scriptsize$\pm$0.173} & 0.087 {\scriptsize$\pm$0.075} & 0.625 {\scriptsize$\pm$0.204} & 1.4$\times$ \\
+NFT & SSD & 0.889 {\scriptsize$\pm$0.032} & 0.620 {\scriptsize$\pm$0.209} & 0.209 {\scriptsize$\pm$0.101} & 0.463 {\scriptsize$\pm$0.183} & 23$\times$ \\
+NFT & DC-SSD & 0.630 {\scriptsize$\pm$0.176} & 0.614 {\scriptsize$\pm$0.224} & 0.216 {\scriptsize$\pm$0.150} & 0.434 {\scriptsize$\pm$0.197} & 3275$\times$ \\
+NFT & DC-SSD w/o~contrast & 0.654 {\scriptsize$\pm$0.170} & 0.524 {\scriptsize$\pm$0.210} & 0.166 {\scriptsize$\pm$0.101} & 0.537 {\scriptsize$\pm$0.196} & 3276$\times$ \\
+NFT & DC-SSD w/o~class bal. & 0.685 {\scriptsize$\pm$0.174} & 0.618 {\scriptsize$\pm$0.221} & 0.140 {\scriptsize$\pm$0.090} & 0.453 {\scriptsize$\pm$0.197} & 3700$\times$ \\
+NFT & Rollback+Repair & 0.314 {\scriptsize$\pm$0.217} & 0.270 {\scriptsize$\pm$0.236} & 0.158 {\scriptsize$\pm$0.109} & 0.499 {\scriptsize$\pm$0.201} & 40$\times$ \\
+\bottomrule
+\end{tabular}
